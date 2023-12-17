@@ -1,0 +1,61 @@
+from Downloads.Transactions import Bank
+
+print('-----Welcome-----')
+bk=Bank()
+bal=0
+while True:
+    print('\nA.Display Balance\nB.Deposit\nC.Withdraw\nD.Exit')
+    opt=input('Enter choice: ')
+    
+    if opt=='A':
+        bk.display(bal)
+    elif opt=='B':
+        dep=eval(input('Enter deposit amount: '))
+        bk.deposit(dep)
+    elif opt=='C':
+        wd=eval(input('Enter withdraw amount: '))
+        bk.withdraw(wd)
+    elif opt=='D':
+        print('Thank You')
+        break
+
+o/p->   -----Welcome-----
+
+        A.Display Balance
+        B.Deposit
+        C.Withdraw
+        D.Exit
+        Enter choice: A
+        Your current Balance:  0
+        
+        A.Display Balance
+        B.Deposit
+        C.Withdraw
+        D.Exit
+        Enter choice: B
+        Enter deposit amount: 500000
+        Your current balance:  500000
+        
+        A.Display Balance
+        B.Deposit
+        C.Withdraw
+        D.Exit
+        Enter choice: C
+        Enter withdraw amount: 1000
+        Your current balance:  499000
+        
+        A.Display Balance
+        B.Deposit
+        C.Withdraw
+        D.Exit
+        Enter choice: A
+        Your current Balance:  499000
+        
+        A.Display Balance
+        B.Deposit
+        C.Withdraw
+        D.Exit
+        Enter choice: D
+        Thank You
+        
+
